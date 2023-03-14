@@ -1,9 +1,21 @@
 # get_ADUserInfos
 Too to Get Informations over the ActiveDIrectory of Users.
 
- It loads Name, mail, ProxyMail, LastLogin,PwdLastSet and the Office where he is located. 
  Edit all "****" Sections because of confidential Informations.
  
- The Office of the employees in this Active Directory Environmnet is set as an OU Group which has to be filtered and printed out.
+This Tool load following Datas from the Active Directory:
+UserName
+Location
+Mail
+ProxyMail
+LastLogon
+LastLogonTimestamp
+PwdLastSet
+PasswordLastSet
 
-The Output will be written in a csv File
+The Location or Office in this context is a User which is allocated to a office in a company.
+The Offices in this Environment are saved as an own OU Group
+This Tools get this Informations with an Filter set in the first lines.
+
+Also this tools writes the Output in a CSV File and Loading it in to a Nextcloud Domain.
+Username, Password and URL has to be set manually.
